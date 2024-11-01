@@ -5,36 +5,48 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: whitesmoke;
+#clockcontainer {
+  position: relative;
+  border: 2px solid black;
+  height: 40vw;
+  width: 40vw;
 
-  color: black;
+  background: url(/clock.png) no-repeat;
+
+  background-size: 100%;
+
+  margin: auto;
 }
 
-body.active {
-  background-color: black;
-  color: white;
+#hour,
+#minute,
+#second {
+  position: absolute;
+  background: black;
+  border-radius: 10px;
+  transform-origin: bottom;
 }
 
-.container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+#hour {
+  height: 24%;
+  width: 1%;
+  top: 26%;
+  left: 49.5%;
+  opacity: 0.8;
 }
 
-.containerimg {
-  width: 230px;
-  height: 230px;
+#minute {
+  height: 35%;
+  width: 1%;
+  top: 15%;
+  left: 49.5%;
+  opacity: 0.8;
 }
 
-.containerimg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.btn {
-  padding: 1rem;
+#second {
+  height: 37%;
+  width: 1%;
+  top: 13%;
+  left: 49.5%;
+  opacity: 0.8;
 }
